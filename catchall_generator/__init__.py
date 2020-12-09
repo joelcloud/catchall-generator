@@ -1,6 +1,5 @@
 import random
 from faker import Faker
-from unidecode import unidecode
 
 class Catchall:
     def __init__(self, catchall):
@@ -15,13 +14,13 @@ class Catchall:
         faker = Faker()
 
         if gender == "random":
-            firstname = unidecode(faker.first_name().lower())
+            firstname = faker.first_name().lower()
         elif gender == "male":
-            firstname = unidecode(faker.first_name_male().lower())
+            firstname = faker.first_name_male().lower()
         elif gender == "female":
-            firstname = unidecode(faker.first_name_female().lower())
+            firstname = faker.first_name_female().lower()
 
-        lastname = unidecode(faker.last_name().lower())
+        lastname = faker.last_name().lower()
 
         variations = [
             firstname + "." + lastname[random.randrange(1, len(lastname))] + "." + lastname,
