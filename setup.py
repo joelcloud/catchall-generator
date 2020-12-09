@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='catchall-generator',
-    version='1.1',
+    version='1.2',
     author='joelcloud',
     author_email='',
     license='MIT',
@@ -13,4 +13,5 @@ setup(
     long_description=long_description,
     url='https://github.com/joelcloud/catchall-generator',
     packages=find_packages(),
+    install_requires=['Faker']
 )
