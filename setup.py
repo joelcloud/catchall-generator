@@ -13,5 +13,5 @@ setup(
     long_description=long_description,
     url='https://github.com/joelcloud/catchall-generator',
     packages=find_packages(),
-    install_requires=['Faker']
+    install_requires=['Faker', 'unidecode']
 )
