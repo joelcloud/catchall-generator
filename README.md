@@ -1,6 +1,6 @@
 catchall-generator
 =============
-Generate randomized emails for your catchall adress.
+Generate randomized emails for your catchall address.
 
 Installation
 ------------
